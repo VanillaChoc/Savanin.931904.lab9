@@ -1,0 +1,124 @@
+.CalculatorWrapper {
+    margin: 15px;
+    border: 5px solid lightskyblue;
+    width: 415px;
+    height: 415px;
+
+    padding: 20px;
+}
+
+.Output {
+    width: 395px;
+    height: 45px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: xx-large;
+    text-align: right;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#CurrentInput {
+    line-height: 40px;
+}
+
+#HistoryInput {
+    color: gray;
+}
+
+.ButtonsGrid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [c1-start] 75px
+    [c2-start] 75px
+    [c3-start] 75px
+    [c4-start] 75px
+    [c5-start] 75px
+    [c5-end];
+    grid-template-rows: [r1-start] 75px 
+    [r2-start] 75px
+    [r3-start] 75px
+    [r4-start] 75px
+    [r4-end];
+}
+
+button {
+    font-size: xx-large;
+}
+
+#Btn7 {
+    grid-column: c1-start;
+    grid-row: r1-start;
+}
+#Btn8 {
+    grid-column: c2-start;
+    grid-row: r1-start;
+}
+#Btn9 {
+    grid-column: c3-start;
+    grid-row: r1-start;
+}
+#BtnDiv {
+    grid-column: c4-start;
+    grid-row: r1-start;
+}
+#BtnCleanAll {
+    grid-column: c5-start;
+    grid-row: r1-start;
+}
+
+#Btn4 {
+    grid-column: c1-start;
+    grid-row: r2-start;
+}
+#Btn5 {
+    grid-column: c2-start;
+    grid-row: r2-start;
+}
+#Btn6 {
+    grid-column: c3-start;
+    grid-row: r2-start;
+}
+#BtnMult {
+    grid-column: c4-start;
+    grid-row: r2-start;
+}
+#BtnClean {
+    grid-column: c5-start;
+    grid-row: r2-start; 
+}
+
+#Btn1 {
+    grid-column: c1-start;
+    grid-row: r3-start;
+}
+#Btn2 {
+    grid-column: c2-start;
+    grid-row: r3-start;
+}
+#Btn3 {
+    grid-column: c3-start;
+    grid-row: r3-start;
+}
+#BtnSub {
+    grid-column: c4-start;
+    grid-row: r3-start;
+}
+#BtnCalc {
+    grid-column: c5-start;
+    grid-row: r3-start / r4-end;
+}
+
+#Btn0 {
+    grid-column: c1-start / c3-start;
+    grid-row: r4-start;
+}
+#BtnFloat {
+    grid-column: c3-start;
+    grid-row: r4-start;
+}
+#BtnAdd {
+    grid-column: c4-start;
+    grid-row: r4-start;
+}
